@@ -12,7 +12,7 @@ app.config["DEBUG"] = True                     # Debug mode enabled
 app.config["SECRET_KEY"] = "super-weak-secret" # Hardcoded weak secret
 app.config["SESSION_COOKIE_SECURE"] = False    # Cookies not marked as secure
 app.config["SESSION_COOKIE_HTTPONLY"] = False  # Cookies accessible to JS
-app.config["API_KEY"] = "another-weak-secret"
+app.config["API_KEY"] = "another-weak-secret"  #test
 
 
 @app.route("/echo", methods=["GET"])
