@@ -4,7 +4,7 @@
 # Do NOT use this in real life.
 
 from flask import Flask, request
-
+# test change# test change# test change
 app = Flask(__name__)
 
 # ❌ Insecure configuration:
@@ -12,6 +12,8 @@ app.config["DEBUG"] = True                     # Debug mode enabled
 app.config["SECRET_KEY"] = "super-weak-secret" # Hardcoded weak secret
 app.config["SESSION_COOKIE_SECURE"] = False    # Cookies not marked as secure
 app.config["SESSION_COOKIE_HTTPONLY"] = False  # Cookies accessible to JS
+app.config["API_KEY"] = "another-weak-secret"  #test
+app.config["API_KEY"] = "another-weak-secret"  #test
 
 
 @app.route("/echo", methods=["GET"])
